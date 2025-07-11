@@ -20,3 +20,21 @@ jobs:
             #   run: cat README.md  
 
 
+jobs: 
+    secondjob: 
+        runs-on: ubuntu-latest
+        steps:
+
+            - name: checkout
+              uses: actions/checkout@v4
+            - name: step1 
+              run: |
+                   echo "Workflow"
+                   ls -ltra 
+                   cat README.md  
+            # - name: List files 
+            #   run: ls
+            # - name: readme 
+            #   run: cat README.md  
+
+
